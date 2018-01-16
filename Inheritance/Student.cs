@@ -13,10 +13,16 @@ namespace Inheritance
             YearGroup = yeargroup;
         }
 
+        public override string ToString()
+        {
+            return Name ;
+        }
+        
         public int YearGroup { get; private set; }
 
         public override decimal EvaluatePerformance()
         {
+            
             return 2;
         }
 
